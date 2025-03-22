@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19547b;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  font-family: monospace;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.hamburgerManuBtn {
+  display: none;
+}
+
+.hamburgerManu {
+  display: none;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  background-color: rgb(78, 78, 255);
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgb(0, 0, 255);
+    transform: scale(0.9);
+  }
+}
+
+section {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+
+.section2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 250px;
+  border-radius: 130px;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+
+.a1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.img1 {
+  border-radius: 0;
+  width: 500px;
+}
+
+.imgs2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.nft1 {
+  border-radius: 0;
+  width: 500px;
+}
+
+.a2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgs3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.kinogo1 {
+  border-radius: 0px;
+  width: 500px;
+}
+
+.toDoList {
+  border-radius: 0px;
+  width: 500px;
+}
+
+.search {
+  border-radius: 0px;
+  width: 1200px;
+}
+
+.a3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.imgs4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.manu1 {
+  border-radius: 0px;
+  width: 500px;
+}
+
+.imgs5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.react1 {
+  border-radius: 0px;
+  width: 500px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+h4 {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+
+.ul {
+  padding-top: 15px;
+  color: white;
+}
+
+.li {
+  cursor: default;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .img1,
+  .nft1,
+  .kinogo1,
+  .toDoList,
+  .manu1,
+  .react1 {
+    width: 400px;
+  }
+
+  .search {
+    width: 800px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .a1,
+  .a2,
+  .a3 {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .img1,
+  .nft1,
+  .kinogo1,
+  .toDoList,
+  .search,
+  .manu1,
+  .react1 {
+    width: 500px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .hamburgerManuBtn {
+    display: block;
+    background-color: #19547b;
+    border: none;
+    width: 35px;
+    height: 20px;
+    top: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .hamburgerManu {
+    display: block;
+    border-radius: 0px;
+    width: 35px;
+    height: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .a1,
+  .a2,
+  .a3 {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .img1,
+  .nft1,
+  .kinogo1,
+  .toDoList,
+  .search,
+  .manu1,
+  .react1 {
+    width: 300px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .hamburgerManuBtn {
+    display: block;
+    background-color: #19547b;
+    border: none;
+    width: 35px;
+    height: 20px;
+    top: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .hamburgerManu {
+    display: block;
+    border-radius: 0px;
+    width: 35px;
+    height: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .a1,
+  .a2,
+  .a3 {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .img1,
+  .nft1,
+  .kinogo1,
+  .toDoList,
+  .search,
+  .manu1,
+  .react1 {
+    width: 300px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .hamburgerManuBtn {
+    display: block;
+    background-color: #19547b;
+    border: none;
+    width: 35px;
+    height: 20px;
+    top: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .hamburgerManu {
+    display: block;
+    border-radius: 0px;
+    width: 35px;
+    height: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .a1,
+  .a2,
+  .a3 {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .img1,
+  .nft1,
+  .kinogo1,
+  .toDoList,
+  .search,
+  .manu1,
+  .react1 {
+    width: 250px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .li {
+    font-size: 13px;
+  }
+}
